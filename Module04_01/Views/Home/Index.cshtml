@@ -43,16 +43,39 @@
                 <li>@item</li>
             }
         </ul>
-        
+
         @*test if*@
         @if (m == 10)
         {
-            @:@@result = @s
+            @:@@result = @s<br />
             <text>
-                aserjafhjkrhasjk<br />
+                這是文字區塊<br />
             </text>
             //在email中小老鼠可以不用打兩個
-            @:john@uuu.com.tw
+            @:john@uuu.com.tw<br />
+        }
+
+        <br />
+
+        @if (m == 10)
+        {
+            @:@@result = @s<br />
+            @:這是文字區塊<br />
+            //在email中小老鼠可以不用打兩個
+            @:john@uuu.com.tw<br />
+        }
+
+        <br />
+
+        @if (m == 10)
+        {
+            @:@@result = @s<br />
+            @*在view中，文字區塊前面不是要上html標籤，就是要用@:*@
+            //這是文字區塊 < br />
+            @:這是文字區塊<br />
+            <text>這樣也可以是文字區塊</text><br />
+            //在email中小老鼠可以不用打兩個
+            @:john@uuu.com.tw<br />
         }
 </body>
 </html>
